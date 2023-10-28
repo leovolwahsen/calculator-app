@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "67e7ace2-5658-4fc0-a96a-d427e99d2bc8"
+      }
+    },
+    "owner": "leovol"
   }
 }
