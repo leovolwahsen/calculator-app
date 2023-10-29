@@ -41,7 +41,7 @@ export default function App() {
   }
   return (
     <SafeAreaView style={s.main}>
-      <TextInput style={s.screen} showSoftInputOnFocus={false} value={total} ></TextInput>
+      <TextInput style={s.screen} showSoftInputOnFocus={false} value={total} multiline={true}></TextInput>
 
       <View style={s.button_row}>
         <TouchableOpacity style={s.yellow_button} onPress={() => handleBtnPress('c')} >
@@ -127,11 +127,15 @@ const s = StyleSheet.create({
     gap: 10,
   },
   screen: {
-    width: "100%",
+    width: "95%",
     height: 200,
     color: "#ffffff",
-    textAlign: "right",
+    textAlign: 'right',
     fontSize: 35,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 'auto',
+    flexWrap: 'wrap',
   },
   button_row: {
     flexDirection: "row",
